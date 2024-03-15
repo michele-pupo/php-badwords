@@ -2,6 +2,7 @@
 <?php
 $censor = $_GET['censor'];
 $paragraph = $_GET['paragraph'];
+$new_paragraph = str_replace($censor, '***', $paragraph);
 ?>
 
 <!DOCTYPE html>
@@ -29,7 +30,7 @@ $paragraph = $_GET['paragraph'];
     </div>
     <!-- fine parola da censurare -->
     <!-- stampa del paragrafo a schermo -->
-    <div class="container d-flex justify-content-center gap-4 py-4">
+    <div class="container d-flex flex-column justify-content-center gap-4 py-4">
         <div>
             <p>
                 <?php 
@@ -37,6 +38,15 @@ $paragraph = $_GET['paragraph'];
                 ?>
             </p>
         </div>
+        <!-- stampa del paragrafo a schermo con la parola censurata -->
+        <div>
+            <p>
+                <?php 
+                    echo $new_paragraph;
+                ?>
+            </p>
+        </div>
+        <!-- fine stampa del paragrafo a schermo con la parola censurata -->
     </div>
     <!-- fine stampa del paragrafo a schermo -->
 
