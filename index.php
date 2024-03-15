@@ -18,12 +18,20 @@
     </div>
     <div class="container">
         <form action="response.php" methods="GET">
-            <!-- input di inserimento paragrafo -->
+            <!-- campo di input per inserire il paragrafo -->
             <div>
                 <label for="paragraph" class="form-label"></label>
                 <textarea class="p-2" name="paragraph" id="paragraph" cols="20" rows="10" placeholder="inserisci il testo da modificare"></textarea>
             </div>
-            <!-- fine input di inserimento paragrafo -->
+            <!-- fine campo di input per inserire il paragrafo -->
+            <!-- campo di input per inserire la parola da censurare -->
+            <div>
+                <label for="censor"></label>
+                <input type="text" class="form-control p-2" placeholder="Taboo" name="censor">
+            </div>
+            <!-- fine campo di input per inserire la parola da censurare -->
+            <!-- invio del form -->
+            <button type="submit" class="btn btn-outline-dark">Invia</button>
         </form>
     </div>
     
