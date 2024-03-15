@@ -20,12 +20,25 @@ $paragraph = $_GET['paragraph'];
 </head>
 <body>
     <!-- parola da censurare -->
-    <span>
-        <?php 
-            echo $censor;
-        ?>
-    </span>
+    <div class="container d-flex justify-content-center gap-4 py-4">
+        <span>
+            <?php 
+                echo $censor;
+            ?>
+        </span>
+    </div>
     <!-- fine parola da censurare -->
+    <!-- stampa del paragrafo a schermo -->
+    <div class="container d-flex justify-content-center gap-4 py-4">
+        <div>
+            <p>
+                <?php 
+                    echo $paragraph;
+                ?>
+            </p>
+        </div>
+    </div>
+    <!-- fine stampa del paragrafo a schermo -->
 
     <!-- script bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
