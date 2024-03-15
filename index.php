@@ -22,11 +22,11 @@
 <body>
     <div class="container" id="container-principal">
         <div class="d-flex justify-content-center">
-            <h1 class="display-1 fw-bold pt-3">Taboolean</h1>
+            <h1 class="display-1 fw-bold py-5">Taboolean</h1>
         </div>
-            <div class="d-flex justify-content-center">
+            <div id="container-image" class="d-flex justify-content-center pb-4">
                 <img src="./img/unnamed.png" alt="taboo image">
-                <h2 class="m-0">LEAN</h2>
+                <h2 class="m-0">lean</h2>
             </div>
         <div class="container">
             <form action="response.php" methods="GET">

@@ -23,39 +23,42 @@ $lenght_new_paragraph = strlen($new_paragraph);
 </head>
 <body>
     <!-- parola da censurare -->
-    <div class="container d-flex justify-content-center gap-4 py-4">
-        <span>
-            <?php 
-                echo $censor;
-            ?>
-        </span>
+    <div class="container-fluid d-flex justify-content-center gap-4 py-5">
+        <h3 class=display-2>La parola Taboo è: 
+            <span class="fw-bold display-5">
+                <?php 
+                    echo $censor;
+                ?>
+            </span>
+        </h2>
     </div>
     <!-- fine parola da censurare -->
     <!-- stampa del paragrafo a schermo -->
-    <div class="container d-flex flex-column justify-content-center gap-4 py-4">
-        <div class="d-flex justify-content-between">
-            <p>
+    <div class="container d-flex flex-column gap-4 py-4">
+        <div class="d-flex flex-column">
+            <p class="display-4">
                 <?php 
                     echo $paragraph;
                 ?>
             </p>
             <!-- stampa a schermo lunghezza del paragrafo -->
-            <span>
-                Il paragrafo ha <?php echo $lenght_paragraph ?> caratteri
-            </span>
+            <h4 class="display-6 d-flex justify-content-center">
+                Il paragrafo digitato ha <span class="fw-bold"><?php echo $lenght_paragraph ?></span> caratteri
+            </h4>
             <!-- fine stampa a schermo lunghezza del paragrafo -->
         </div>
+        <hr>
         <!-- stampa del paragrafo a schermo con la parola censurata -->
-        <div class="d-flex justify-content-between">
-            <p>
+        <div class="d-flex flex-column mt-5">
+            <p class="display-4">
                 <?php 
                     echo $new_paragraph;
                 ?>
             </p>
             <!-- stampa a schermo lunghezza del nuovo paragrafo -->
-            <span>
-                Il paragrafo ha <?php echo $lenght_new_paragraph ?> caratteri
-            </span>
+            <h4 class="display-6 d-flex justify-content-center">
+                Il nuovo paragrafo ha <span class="fw-bold"><?php echo $lenght_new_paragraph ?></span> caratteri
+            </h4>
             <!-- fine stampa a schermo lunghezza del nuovo paragrafo -->
         </div>
         <!-- fine stampa del paragrafo a schermo con la parola censurata -->

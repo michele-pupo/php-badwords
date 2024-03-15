@@ -2,16 +2,25 @@ body{
     background-color: #6962AD;
 }
 
+#container-image{
+    position: relative;
+    left: 120px;
+}
+
 h2{
     color: #ff7276;
-    font-size: 90px;
+    font-size: 150px;
     height: 100%;
     background-color: transparent;
     font-family: 'Nerko One', sans-serif;
     position: relative;
-    top: 330px;
-    right: 45px;
+    top: 275px;
+    right: 55px;
     transform: rotate(-10deg);
+}
+
+p{
+    color: #ff7276;
 }
 
 #button{
