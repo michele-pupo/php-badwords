@@ -3,6 +3,8 @@
 $censor = $_GET['censor'];
 $paragraph = $_GET['paragraph'];
 $new_paragraph = str_replace($censor, '***', $paragraph);
+$lenght_paragraph = strlen($paragraph);
+$lenght_new_paragraph = strlen($new_paragraph);
 ?>
 
 <!DOCTYPE html>
@@ -31,20 +33,30 @@ $new_paragraph = str_replace($censor, '***', $paragraph);
     <!-- fine parola da censurare -->
     <!-- stampa del paragrafo a schermo -->
     <div class="container d-flex flex-column justify-content-center gap-4 py-4">
-        <div>
+        <div class="d-flex justify-content-between">
             <p>
                 <?php 
                     echo $paragraph;
                 ?>
             </p>
+            <!-- stampa a schermo lunghezza del paragrafo -->
+            <span>
+                Il paragrafo ha <?php echo $lenght_paragraph ?> caratteri
+            </span>
+            <!-- fine stampa a schermo lunghezza del paragrafo -->
         </div>
         <!-- stampa del paragrafo a schermo con la parola censurata -->
-        <div>
+        <div class="d-flex justify-content-between">
             <p>
                 <?php 
                     echo $new_paragraph;
                 ?>
             </p>
+            <!-- stampa a schermo lunghezza del nuovo paragrafo -->
+            <span>
+                Il paragrafo ha <?php echo $lenght_new_paragraph ?> caratteri
+            </span>
+            <!-- fine stampa a schermo lunghezza del nuovo paragrafo -->
         </div>
         <!-- fine stampa del paragrafo a schermo con la parola censurata -->
     </div>
